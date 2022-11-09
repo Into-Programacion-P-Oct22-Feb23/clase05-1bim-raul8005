@@ -26,9 +26,18 @@ public class Ejemplo2 {
         // Condicionales compuestos
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US); // 10,2 / 10.2
+     
+        double nota1;
+        double nota2;
+        double suma;
         double promedio;
-        System.out.println("Ingrese el promedio por favor");
-        promedio = entrada.nextDouble();
+        
+        System.out.println("Ingrese el promedio de nota1, por favor");
+        nota1 = entrada.nextDouble();
+        System.out.println("Ingrese el promedio de nota 2, por favor");
+        nota2 = entrada.nextDouble();
+        suma = nota1 + nota2;
+        promedio = suma /2;
 
         if (promedio >= 7.5) {
             System.out.printf("Estudiante aprobado con un "

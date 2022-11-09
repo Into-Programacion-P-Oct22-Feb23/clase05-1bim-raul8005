@@ -18,26 +18,18 @@ public class Ejemplo3 {
         // Ingreso de valores por teclado
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US); 
+        double promedio;
+        double nota1;
+        double nota2;
+        double suma;
         
-        // declarar las variables
-        String nombreAsignatura1;
-        String nombreAsignatura2;
-        double notaAsignatura1;
-        double notaAsignatura2;
-        String nombreEstudiante;
-        
-        System.out.println("Ingrese nombre de asignatura 1");
-        nombreAsignatura1 = entrada.nextLine();
-        System.out.println("Ingrese nombre de asignatura 2");
-        nombreAsignatura2 = entrada.nextLine();
         
         System.out.println("Ingrese nota de asignatura 1");
-        notaAsignatura1 = entrada.nextDouble();
+        nota1 = entrada.nextDouble();
         System.out.println("Ingrese nota de asignatura 2");
-        notaAsignatura2 = entrada.nextDouble();
-        entrada.nextLine();
-        System.out.println("Ingrese nombre de estudiante");
-        nombreEstudiante = entrada.nextLine();
+        nota2 = entrada.nextDouble();
+        suma = nota1 + nota2;
+        promedio = suma / 2;
         
         
         System.out.printf("Asignatura 1: %s\nNota 1:%.2f\nAsignatura 2:%s\n "
